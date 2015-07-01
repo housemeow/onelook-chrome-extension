@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "Onelook",
+  "description": "A chrome extension can look up the text you selected via onelook dictionary",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "onelook.png",
+    "default_popup": "popup.html",
+    "default_title": "Click here!"
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+}
