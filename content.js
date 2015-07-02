@@ -1,8 +1,7 @@
-window.onload = function(){
-	document.addEventListener("mouseup", function(){
-		var selection = window.getSelection().toString();
-		chrome.runtime.sendMessage({
-			selection: selection
-		});
+document.addEventListener("mouseup", function(){
+	var selection = window.getSelection().toString();
+	console.log("selection:" + selection);
+	chrome.runtime.sendMessage({
+		selection: selection
 	});
-};
+});
